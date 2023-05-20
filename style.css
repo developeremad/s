@@ -1,0 +1,200 @@
+/* default css */
+
+
+
+h1, h2, h3, h4, h5, h6, p, a{
+    font-family: 'Be Vietnam Pro', sans-serif;
+/* font-family: 'Rubik', sans-serif; */
+}
+
+.sp{
+    padding: 100px 0;
+}
+
+
+
+
+
+/* header css start */
+.menu-item li{
+    display: inline-block;
+}
+.menu-item li a{
+    display: inline-block;
+    margin: 0 20px;
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    position: relative;
+    transition: .4s;
+}
+.menu-item li a:hover{
+    color: #913bff;
+}
+
+.menu-item li a::before{
+    content: "";
+    height: 2px;
+    width: 0%;
+    position: absolute;
+    background-color: #913bff;
+    top: 100%;
+    visibility: hidden;
+
+    transition: .4s;
+}
+.menu-item li a:hover:before{
+    visibility: visible;
+    width: 100%;
+}
+
+/* send message hover edti */
+.btn-primary {
+--bs-btn-hover-bg: #1150a8;
+   
+}
+
+/* =========header css end======== */
+
+
+
+
+/* =========hero section css start=========== */
+
+.hero{
+    background: url(https://i.ibb.co/nDLhTb5/pexels-hasan-albari-1229861.jpg);
+    padding: 326px;
+    background-position: center;
+    color:white
+}
+
+.hero h1{
+    font-size: 75px;
+}
+
+
+
+/*======== score section css start ==========*/
+
+.score h1{
+    font-weight: 800;
+}
+
+/*======== score section css start ==========*/
+
+
+
+/* =============procuct css start============== */
+
+.product-section{
+    background-color: #cecece;
+}
+
+.product-main{
+}
+
+.card-price h5{
+    color: #913bff;
+
+}
+
+
+.product-main .card img{
+    height: 322px;
+    position: relative;
+    
+}
+.card-head{
+    position: absolute;
+    height: 76%;
+    width:100% ;
+    border: 1px solid green;
+    overflow: hidden;
+}
+
+.round {
+    height: 100px;
+    width: 100px;
+    background-color: #913bff;
+    position: absolute;
+    border-radius: 50%;
+    right: -26px;
+    top: 77%;
+    text-align: center;
+    transform: scale(0);
+    transition: .4s;
+    transform-origin: bottom right;
+}
+.box-wrap:hover .round{
+    transform: scale(1);
+}
+.box-wrap{
+    transition: .4s ease-in-out;
+}
+.box-wrap:hover{
+    transform: translateY(-10px);
+}
+
+.box-wrap:hover .round i{
+    transform: scale(1);
+    
+}
+
+
+.round i{
+    line-height: 80px;
+    transform: scale(0);
+    transition: .6s ease-in-out;
+    
+}
+.box img{
+    height: 320px;
+    object-fit: cover;
+    width: 100%;
+}
+.box{
+    height: 320px;
+    position: relative;
+    overflow: hidden;
+}
+
+.bottom{
+    padding: 10px 0;
+    border: none;
+}
+.bottom h2{
+    color: #913bff;
+}
+
+
+
+
+/* =============procuct css end============== */
+
+
+/* ================feature css start================ */
+
+.featurebox{
+    box-shadow: 0 0 50px rgba(168, 168, 207, 0.473);
+    padding: 20px;
+    transition: .4s;
+}
+
+.featurebox i{
+    font-size: 50px;
+    padding: 20px 0;
+    color: #913bff;
+}
+.featurebox p{
+    color:#335371 ;
+}
+
+.featurebox:hover{
+    transform: translateY(-10px);
+}
+
+/* ================feature css end================ */
+
+.solution-sec{
+    background-image: linear-gradient(to top, #f9ffff, #beecec44) ;
+}
